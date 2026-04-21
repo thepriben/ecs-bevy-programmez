@@ -1,1 +1,3 @@
-# ecs-bevy-programmez
+#### *ECS, animation 3D et Rust : comprendre Bevy en construisant une petite scène animée*, 2026, *Programmez!*.
+
+---
