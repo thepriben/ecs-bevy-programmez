@@ -1,5 +1,7 @@
 #### *ECS, animation 3D et Rust : comprendre Bevy en construisant une petite scène animée*, 2026, *Programmez!*.
 
 ---
-[ecs-bevy-demo.mp4](media/ecs-bevy-demo.mp4)
-![ecs-bevy-demo.png](media/ecs-bevy-demo.png)
+
+https://github.com/user-attachments/assets/8012ec1a-4417-4d29-9125-a62fb14c74b2
+
+
