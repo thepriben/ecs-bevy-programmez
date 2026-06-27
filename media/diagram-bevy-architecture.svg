@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 820" font-family="-apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="ar" markerWidth="9" markerHeight="9" refX="6" refY="4.5" orient="auto">
+      <path d="M0 0 L9 4.5 L0 9 z" fill="#3a4658"/>
+    </marker>
+  </defs>
+
+  <rect width="1024" height="820" fill="#ffffff"/>
+
+  <!-- Bevy App -->
+  <rect x="312" y="24" width="400" height="62" rx="12" fill="#eaf1fc" stroke="#b6cdee" stroke-width="1.5"/>
+  <g transform="translate(452,55)" stroke="#2f6fd0" stroke-width="2" fill="none" stroke-linejoin="round">
+    <path d="M0 -12 L11 -6 L11 6 L0 12 L-11 6 L-11 -6 Z"/>
+    <path d="M-11 -6 L0 0 L11 -6 M0 0 L0 12"/>
+  </g>
+  <text x="480" y="63" font-size="22" font-weight="700" fill="#1f3a6e">Bevy App</text>
+
+  <!-- App -> Systems / Resources -->
+  <g stroke="#3a4658" stroke-width="2" fill="none">
+    <path d="M512 86 V108 H330 V126" marker-end="url(#ar)"/>
+    <path d="M512 108 H694 V126" marker-end="url(#ar)"/>
+  </g>
+
+  <!-- Systems -->
+  <rect x="180" y="128" width="300" height="96" rx="12" fill="#ecf6ef" stroke="#bfe2cd" stroke-width="1.5"/>
+  <g transform="translate(214,162)" fill="#2f7d4f">
+    <circle r="6" fill="none" stroke="#2f7d4f" stroke-width="3"/>
+    <g stroke="#2f7d4f" stroke-width="3" stroke-linecap="round">
+      <line x1="0" y1="-12" x2="0" y2="-8"/><line x1="0" y1="8" x2="0" y2="12"/>
+      <line x1="-12" y1="0" x2="-8" y2="0"/><line x1="8" y1="0" x2="12" y2="0"/>
+      <line x1="-8.5" y1="-8.5" x2="-5.7" y2="-5.7"/><line x1="5.7" y1="5.7" x2="8.5" y2="8.5"/>
+      <line x1="8.5" y1="-8.5" x2="5.7" y2="-5.7"/><line x1="-5.7" y1="5.7" x2="-8.5" y2="8.5"/>
+    </g>
+  </g>
+  <text x="244" y="162" font-size="18" font-weight="700" fill="#2f7d4f">Systems</text>
+  <g><rect x="416" y="142" width="46" height="20" rx="10" fill="#e7eefb" stroke="#c2d4f0"/><text x="439" y="156" text-anchor="middle" font-size="11" font-weight="700" fill="#3a6abf">CPU</text></g>
+  <text x="214" y="190" font-size="12.5" fill="#46546b">Logique, comportements,</text>
+  <text x="214" y="208" font-size="12.5" fill="#46546b">mises &#224; jour ECS</text>
+
+  <!-- Resources -->
+  <rect x="544" y="128" width="300" height="96" rx="12" fill="#f1ecfb" stroke="#cdbff0" stroke-width="1.5"/>
+  <g transform="translate(580,162)">
+    <ellipse cx="0" cy="-8" rx="11" ry="4" fill="#8a64d6"/>
+    <path d="M-11 -8 V8 a11 4 0 0 0 22 0 V-8" fill="#7a52c8"/>
+    <ellipse cx="0" cy="-8" rx="11" ry="4" fill="#8a64d6"/>
+    <path d="M-11 0 a11 4 0 0 0 22 0" fill="none" stroke="#efe7fb" stroke-width="1.4"/>
+  </g>
+  <text x="610" y="162" font-size="18" font-weight="700" fill="#6f4bbf">Resources</text>
+  <g><rect x="780" y="142" width="46" height="20" rx="10" fill="#e7eefb" stroke="#c2d4f0"/><text x="803" y="156" text-anchor="middle" font-size="11" font-weight="700" fill="#3a6abf">CPU</text></g>
+  <text x="610" y="190" font-size="12.5" fill="#54496b">Donn&#233;es globales, assets,</text>
+  <text x="610" y="208" font-size="12.5" fill="#54496b">configuration, &#233;tat</text>
+
+  <!-- Systems -> ECS World -->
+  <line x1="330" y1="224" x2="330" y2="254" stroke="#3a4658" stroke-width="2" marker-end="url(#ar)"/>
+
+  <!-- ECS World -->
+  <rect x="110" y="258" width="804" height="248" rx="14" fill="#fdf6e8" stroke="#ead9a8" stroke-width="1.5"/>
+  <g transform="translate(452,294)" fill="none" stroke="#b8861f" stroke-width="2.4" stroke-linejoin="round">
+    <path d="M0 -12 L10.4 -6 L10.4 6 L0 12 L-10.4 6 L-10.4 -6 Z"/>
+    <circle r="3.4" fill="#b8861f" stroke="none"/>
+  </g>
+  <text x="480" y="302" font-size="19" font-weight="700" fill="#a9781f">ECS World</text>
+  <text x="512" y="326" text-anchor="middle" font-size="12.5" fill="#8a7a52">Stocke toutes les entit&#233;s et leurs composants</text>
+
+  <!-- Entity #1 -->
+  <text x="170" y="360" text-anchor="middle" font-size="12" fill="#8a7a52">Entity</text>
+  <circle cx="170" cy="384" r="16" fill="#f7eccf" stroke="#e0c98a"/>
+  <text x="170" y="389" text-anchor="middle" font-size="13" font-weight="700" fill="#a9781f">#1</text>
+  <!-- row1 chips -->
+  <g>
+    <rect x="210" y="361" width="160" height="46" rx="9" fill="#ffffff" stroke="#cdd9ea"/>
+    <g transform="translate(236,384)" stroke="#2f6fd0" stroke-width="1.8" fill="none" stroke-linejoin="round"><path d="M0 -8 L8 -4 L8 4 L0 8 L-8 4 L-8 -4 Z"/><path d="M-8 -4 L0 0 L8 -4 M0 0 L0 8"/></g>
+    <text x="258" y="389" font-size="13" font-weight="700" fill="#2f6fd0">Transform</text>
+
+    <rect x="384" y="361" width="130" height="46" rx="9" fill="#ffffff" stroke="#cdd9ea"/>
+    <g transform="translate(410,384)" fill="none" stroke="#3a9d5d" stroke-width="1.8" stroke-linecap="round"><path d="M-8 1 A9 9 0 1 1 -5 7"/><path d="M-5 2 L-8 1 L-7.5 4.5"/></g>
+    <text x="432" y="389" font-size="13" font-weight="700" fill="#2f7d4f">Orbit</text>
+
+    <rect x="528" y="361" width="126" height="46" rx="9" fill="#ffffff" stroke="#cdd9ea"/>
+    <g transform="translate(554,384)" fill="none" stroke="#e08a2e" stroke-width="1.8" stroke-linecap="round"><path d="M7 -4 A8.5 8.5 0 1 0 8 3"/><path d="M4 -5 L8 -5 L8 -1"/></g>
+    <text x="576" y="389" font-size="13" font-weight="700" fill="#bf7a1f">Spin</text>
+
+    <rect x="668" y="361" width="126" height="46" rx="9" fill="#ffffff" stroke="#cdd9ea"/>
+    <path d="M686 384 q5 -9 10 0 q5 9 10 0" fill="none" stroke="#5a63c8" stroke-width="2.2" stroke-linecap="round"/>
+    <text x="716" y="389" font-size="13" font-weight="700" fill="#4a52b8">Bob</text>
+  </g>
+
+  <!-- divider -->
+  <line x1="150" y1="424" x2="874" y2="424" stroke="#ead9a8" stroke-width="1" stroke-dasharray="4 4"/>
+
+  <!-- Entity #2 -->
+  <text x="170" y="448" text-anchor="middle" font-size="12" fill="#8a7a52">Entity</text>
+  <circle cx="170" cy="472" r="16" fill="#f7eccf" stroke="#e0c98a"/>
+  <text x="170" y="477" text-anchor="middle" font-size="13" font-weight="700" fill="#a9781f">#2</text>
+  <g>
+    <rect x="210" y="449" width="170" height="46" rx="9" fill="#ffffff" stroke="#cdd9ea"/>
+    <g transform="translate(236,472)" fill="none" stroke="#2f6fd0" stroke-width="1.8"><rect x="-8" y="-6" width="16" height="12" rx="2"/><circle cx="0" cy="0" r="3.2"/></g>
+    <text x="258" y="477" font-size="13" font-weight="700" fill="#2f6fd0">CameraRig</text>
+
+    <rect x="394" y="449" width="160" height="46" rx="9" fill="#ffffff" stroke="#cdd9ea"/>
+    <g transform="translate(420,472)" stroke="#2f6fd0" stroke-width="1.8" fill="none" stroke-linejoin="round"><path d="M0 -8 L8 -4 L8 4 L0 8 L-8 4 L-8 -4 Z"/><path d="M-8 -4 L0 0 L8 -4 M0 0 L0 8"/></g>
+    <text x="442" y="477" font-size="13" font-weight="700" fill="#2f6fd0">Transform</text>
+
+    <text x="582" y="479" font-size="16" fill="#b9a36a">&#8230;</text>
+  </g>
+
+  <!-- ECS World -> Renderer -->
+  <line x1="512" y1="506" x2="512" y2="538" stroke="#3a4658" stroke-width="2" marker-end="url(#ar)"/>
+
+  <!-- Renderer -->
+  <rect x="240" y="540" width="544" height="82" rx="12" fill="#fdeeee" stroke="#f2c4c2" stroke-width="1.5"/>
+  <g transform="translate(300,578)" fill="none" stroke="#c0403c" stroke-width="2"><rect x="-15" y="-12" width="30" height="20" rx="2"/><line x1="-6" y1="8" x2="-9" y2="14"/><line x1="6" y1="8" x2="9" y2="14"/><line x1="-11" y1="14" x2="11" y2="14" stroke-linecap="round"/></g>
+  <text x="332" y="576" font-size="18" font-weight="700" fill="#c0403c">Renderer</text>
+  <g><rect x="700" y="556" width="48" height="20" rx="10" fill="#fdeaea" stroke="#f0b9b7"/><text x="724" y="570" text-anchor="middle" font-size="11" font-weight="700" fill="#c0403c">GPU</text></g>
+  <text x="332" y="598" font-size="12.5" fill="#6b4f4e">Rendu 3D via WGPU</text>
+  <text x="332" y="614" font-size="12.5" fill="#6b4f4e">Abstraction multiplateforme</text>
+
+  <!-- Renderer -> OS -->
+  <g stroke="#3a4658" stroke-width="2" fill="none">
+    <path d="M512 622 V648 H226 V662" marker-end="url(#ar)"/>
+    <path d="M512 648 V662" marker-end="url(#ar)"/>
+    <path d="M512 648 H798 V662" marker-end="url(#ar)"/>
+  </g>
+
+  <!-- Windows -->
+  <rect x="98" y="664" width="256" height="92" rx="12" fill="#eaf1fc" stroke="#b6cdee" stroke-width="1.5"/>
+  <g transform="translate(140,704)" fill="#2f6fd0"><rect x="-14" y="-13" width="12" height="12"/><rect x="2" y="-13" width="12" height="12"/><rect x="-14" y="3" width="12" height="12"/><rect x="2" y="3" width="12" height="12"/></g>
+  <text x="172" y="698" font-size="16" font-weight="700" fill="#2f6fd0">Windows</text>
+  <text x="172" y="717" font-size="11.5" fill="#5b6470">WGPU Backend</text>
+  <text x="172" y="735" font-size="12" font-weight="700" fill="#2f6fd0">DirectX 12 / Vulkan</text>
+
+  <!-- Linux -->
+  <rect x="384" y="664" width="256" height="92" rx="12" fill="#ecf6ef" stroke="#bfe2cd" stroke-width="1.5"/>
+  <g transform="translate(426,704)">
+    <ellipse cx="0" cy="-2" rx="11" ry="14" fill="#2b2b2b"/>
+    <ellipse cx="0" cy="3" rx="9" ry="10" fill="#ffffff"/>
+    <circle cx="-3.5" cy="-6" r="2.2" fill="#ffffff"/><circle cx="3.5" cy="-6" r="2.2" fill="#ffffff"/>
+    <circle cx="-3.5" cy="-6" r="1.1" fill="#2b2b2b"/><circle cx="3.5" cy="-6" r="1.1" fill="#2b2b2b"/>
+    <path d="M-3 -2 L0 1 L3 -2 Z" fill="#f6a623"/>
+    <path d="M-9 12 q-3 4 1 5 M9 12 q3 4 -1 5" fill="#f6a623" stroke="#f6a623" stroke-width="2"/>
+  </g>
+  <text x="458" y="698" font-size="16" font-weight="700" fill="#2f7d4f">Linux</text>
+  <text x="458" y="717" font-size="11.5" fill="#5b6470">WGPU Backend</text>
+  <text x="458" y="735" font-size="12" font-weight="700" fill="#2f7d4f">Vulkan</text>
+
+  <!-- macOS -->
+  <rect x="670" y="664" width="256" height="92" rx="12" fill="#f1ecfb" stroke="#cdbff0" stroke-width="1.5"/>
+  <g transform="translate(712,703)" fill="#6f4bbf">
+    <path d="M3 -14 q-1 4 -4 5 q1 -4 4 -5 Z"/>
+    <path d="M0 -8 q5 -3 9 1 q3 3 1 9 q-2 6 -5 7 q-2 1 -4 0 q-2 -1 -4 0 q-3 -1 -5 -7 q-2 -6 1 -9 q4 -4 9 -1 Z"/>
+  </g>
+  <text x="744" y="698" font-size="16" font-weight="700" fill="#6f4bbf">macOS</text>
+  <text x="744" y="717" font-size="11.5" fill="#5b6470">WGPU Backend</text>
+  <text x="744" y="735" font-size="12" font-weight="700" fill="#6f4bbf">Metal</text>
+
+  <!-- Legend -->
+  <rect x="110" y="772" width="804" height="40" rx="9" fill="#f6f8fb" stroke="#e1e7f0"/>
+  <g>
+    <rect x="128" y="782" width="40" height="19" rx="9.5" fill="#e7eefb" stroke="#c2d4f0"/><text x="148" y="795" text-anchor="middle" font-size="10.5" font-weight="700" fill="#3a6abf">CPU</text>
+    <text x="176" y="796" font-size="12" fill="#46546b">Traitement sur le processeur</text>
+
+    <rect x="372" y="782" width="40" height="19" rx="9.5" fill="#fdeaea" stroke="#f0b9b7"/><text x="392" y="795" text-anchor="middle" font-size="10.5" font-weight="700" fill="#c0403c">GPU</text>
+    <text x="420" y="796" font-size="12" fill="#46546b">Rendu sur la carte graphique</text>
+
+    <g transform="translate(672,791)" fill="none" stroke="#b8861f" stroke-width="2" stroke-linejoin="round"><path d="M0 -8 L7 -4 L7 4 L0 8 L-7 4 L-7 -4 Z"/></g>
+    <text x="686" y="796" font-size="12" fill="#46546b">Entit&#233;</text>
+
+    <g transform="translate(770,791)" stroke="#2f6fd0" stroke-width="1.8" fill="none" stroke-linejoin="round"><path d="M0 -8 L7 -4 L7 4 L0 8 L-7 4 L-7 -4 Z"/><path d="M-7 -4 L0 0 L7 -4 M0 0 L0 8"/></g>
+    <text x="784" y="796" font-size="12" fill="#46546b">Composant</text>
+  </g>
+</svg>
