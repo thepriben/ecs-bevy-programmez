@@ -6,7 +6,7 @@ Une petite scène 3D animée écrite en [Rust](https://www.rust-lang.org/) avec 
 
 ## Démonstration
 
-https://github.com/user-attachments/assets/7c5e2151-3b76-44df-aa1a-89aed3388c88
+https://github.com/user-attachments/assets/19dc7512-17dc-4137-a554-9128f29fbca6
 
 [![Aperçu de la scène](media/ecs-bevy-demo.png)](media/ecs-bevy-demo.mp4)
 
